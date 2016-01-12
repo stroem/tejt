@@ -1,0 +1,18 @@
+import os, sys, copy
+
+libraries = Split("""
+    GL
+    GLU
+    SDL
+    zinara
+    pthread
+""")
+
+environment = Environment(LIBS = libraries, CCFLAGS = '-Wall -pedantic-errors -g')
+
+sources = []
+for filename in os.listdir('source'):
+    if (len(filename) > 4) and (filename[(len(filename) - 4):len(filename)] == '.cpp'):
+        sources.append(os.path.join('source', filename))
+
+library = environment.Program('Tejtpuck', sources)

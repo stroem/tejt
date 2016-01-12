@@ -1,0 +1,4 @@
+}qUTejtservq(cSCons.Node.FS
+BuildInfo
+qoq}q(UbsigqU 061b0e5da051a4db791cc20f268a81c5qU	bimplicitq]q	Ubdependsq
+]qUbdependsigsq]qUbactsigqU edd0abf17ff48337dbc9faf08a69633eqUbimplicitsigsq]qUbactqUHg++ -o Tejtserv main.o service_handler.o connection.o -lzinara -lpthreadqUbsourcesq]q(Usource/main.oqUsource/service_handler.oqUsource/connection.oqeUbsourcesigsq]q(U 21ef0ff7ce60383ac4fdc632fccf04f3qU f09c65b8ce13acc550429501aa9ccf2aqU 1376c617f69182e6e7e3e5cd111bbe7eqeubs.

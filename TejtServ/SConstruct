@@ -1,0 +1,15 @@
+import os, sys, copy
+
+libraries = Split("""
+    zinara
+    pthread
+""")
+
+environment = Environment(LIBS = libraries, CCFLAGS = '-g') #, CCFLAGS = '-DDEBUG')
+
+sources = []
+for filename in os.listdir('source'):
+    if (len(filename) > 4) and (filename[(len(filename) - 4):len(filename)] == '.cpp'):
+        sources.append(os.path.join('source', filename))
+
+library = environment.Program('Tejtserv', sources)
